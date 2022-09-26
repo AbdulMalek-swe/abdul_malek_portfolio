@@ -1,0 +1,151 @@
+:root{
+    --body-color : #101928;
+    --main-color : hsl(51, 100%, 52%) ;
+    --white:white;
+}
+body{
+    overflow-x: hidden;
+}
+body,.navbar{
+    background-color: var(--body-color);
+    
+}
+.offcanvas{
+    background-color: transparent !important;
+    border: none !important;
+
+}
+.navbar-toggler{
+    background-color:var(--main-color) !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 50% !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    font-size: 18px;
+}
+.navbar-nav .nav-item .nav-link{
+    color: aliceblue !important;
+}
+.about-mySelf-1,.abouts{
+    margin-top: 222px;
+}
+.about-mySelf-2{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    grid-gap: 22px;
+}
+.about-mySelf h2{
+     color: var(--main-color);
+}
+.about-mySelf h1{
+     color: var(--white);
+     font-weight: bold;
+     font-size: 38px;
+}
+.about-mySelf h3{
+     color: var(--white);
+}
+.about-mySelf p,a,i{
+     color: var(--white);
+}
+.about-mySelf-2 .lines{
+    line-height: 1.2 !important;
+}
+.resume{
+    background-color: var(--main-color);
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.about-mySelf .me-btn{
+    background-color:transparent ;
+    border: 1px solid var(--main-color);
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: bold;
+}
+.my-pic{
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    filter: grayscale();
+}
+.my-pic:hover{
+    filter: grayscale(0%);
+}
+
+
+.active{
+    background-color: red;
+}
+
+
+/* progress bar code is here  */
+.skill-sec{
+    margin-top: 180px;
+}
+.progress-row{
+    display: grid;
+    grid-gap: 12px !important;
+    grid-template-columns:  repeat(2,1fr);
+    align-items: center;
+}
+.progress-grid{
+    background-color:#1d2838 ;
+    /* background-color: red; */
+    margin-top: 16px ;
+    /* margin-left: 12px; */
+    border-radius: 4px;
+}
+.progress1{
+    color: rgba(255, 255, 255, 0.756);
+    display: flex;
+    grid-template-columns:  repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding:16px 12px 16px 12px
+}
+.progress-line{
+    width: 80%;
+    height: 8px;
+    background: var(--main-color);
+    border-radius: 4px;
+}
+.active{
+    background-color: var(--main-color);
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+}
+.skill-btn{
+    border: 2px solid var(--main-color);
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.skill-btn:hover{
+    background-color: var(--main-color);
+}
+@media (max-width:992px) {
+    .progress-sec{
+        text-align: center;
+    }
+    .abouts{
+        text-align: center;
+    }
+    .about-mySelf-2{
+        grid-template-columns: 4fr;
+        text-align: center;
+    }
+    .progress-row{
+        grid-template-columns:  1fr;
+    }
+}
+
+
+.form-control{
+    box-shadow: 0px 0px 10px 10px black !important;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Malek Sarkar | Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/images/myLogo.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/dbd323067d.js" crossorigin="anonymous"></script>
+    <style>
+        .offcanvas-backdrop {
+            background-color: transparent !important;
+            opacity: 1 !important;
+        }
+
+        /* .offcanvas{
+    right: -122px;
+        transition: width .3s .1s !important;
+    }
+    .offcanvas.offcanvas-end{
+        right: 122px !important;
+        transform: translateX(100%) !important;
+    } */
+        .my-logo {
+            width: 80px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="containe mb-5">
+        <nav class="navbar  fixed-top">
+
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="my-logo" src="./images/myLogo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <div class="offcanvas-header">
+
+
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="*">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <!-- self details code is here  -->
+
+    <section class="container">
+        <div>
+
+            <div class="about-mySelf abouts">
+                <h2>Hello ! I'm</h3>
+                    <h1>Abdul Malek Sarkar</h1>
+                    <h2>Full Stack Developer</h3>
+                        <h3>Web Developer | Software Engineer
+                    </h2>
+                    <p>--Follow Me <a href="https://github.com/AbdulMalek-swe"><i class="fab fa-github"></i></a> <a
+                            href="https://www.linkedin.com/in/abdul-malek-sarkar-3053271b2/"><i
+                                class="fab fa-linkedin-in"></i></a></p>
+                    <div>
+                        <button class="resume" onclick="document.getElementById('resume').click()">My Resume</button>
+                        <a href="AbdullmalekResume.pdf" id="resume" download hidden></a>
+                        <button class="me-btn" class="me-btn">About Me</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="about-mySelf-1 mb-5">
+            <div class="about-mySelf about-mySelf-2">
+                <div>
+                    <h1>About</h1>
+                    <h2>Abdul Malek Sarkar</h2>
+
+                    <img class="my-pic" src="/images/myPic.jpg" alt="loading...">
+                </div>
+                <div>
+                    <p class="text-start " style="line-height:2.5;font-weight: 600;"> Hello, I'm Abdul Malek, a
+                        passionate
+                        software engineer. I develop web applications . I'm a current student of Software Engineering at
+                        Daffodil International University, Ashulia campus. Under Dept. of Software Engineering. I have
+                        learned different programming languages in my university courses such as C,Cpp, Python, PHP,
+                        JavaScript, etc. Mainly I'm working with JavaScript and it's frameworks. I am available for any
+                        kind
+                        of job opportunity that suits my interests.</p>
+                    <div class="text-start">
+                        <button class="resume" onclick="document.getElementById('resume').click()">My Resume</button>
+                        <a href="AbdullmalekResume.pdf" id="resume" download hidden></a>
+                        <button class="me-btn" class="me-btn">My Skills</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skill section code is here  -->
+
+    <section>
+        <div class=" skill-sec mb-5">
+
+
+            <div class="container">
+                <div class="progress-sec">
+                    <h2 class="text-light">My skill</h2>
+                    <button class="skill-btn" onclick="skill('web',0)">Web</button>
+                    <button class="skill-btn" onclick="skill('others',1)">Others</button>
+                    <button class="skill-btn" onclick="skill('proggraming',2)">Programming</button>
+                    <button class="skill-btn" onclick="skill('tools',3)">Tools</button>
+                </div>
+                <!-- skill code is here  -->
+                <div class="progress-row m" id="skill">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio code  -->
+
+
+    <section>
+        <div class="portfolio-section mb-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 " id="cards-row">
+                 
+                </div>
+        </div>
+         <div class="text-center mt-5">
+            <button class="skill-btn">See More</button>
+          
+         </div>
+        </div>
+        
+         
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
