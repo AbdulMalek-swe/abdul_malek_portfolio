@@ -9,6 +9,11 @@ body{
 body,.navbar{
     background-color: var(--body-color);
     
+}a{
+    text-decoration: none;
+}
+.about-me-btn:hover{
+    color: white !important;
 }
 .offcanvas{
     background-color: transparent !important;
@@ -20,8 +25,8 @@ body,.navbar{
     box-shadow: none !important;
     border: none !important;
     border-radius: 50% !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
     font-size: 18px;
 }
 .navbar-nav .nav-item .nav-link{
@@ -56,10 +61,12 @@ body,.navbar{
 }
 .resume{
     background-color: var(--main-color);
-    padding: 8px 15px 8px 15px;
+    padding: 9px 15px 9px 15px;
     border-radius: 5px;
+    border: none;
     font-weight: bold;
 }
+ 
 .about-mySelf .me-btn{
     background-color:transparent ;
     border: 1px solid var(--main-color);
@@ -129,6 +136,9 @@ body,.navbar{
 .skill-btn:hover{
     background-color: var(--main-color);
 }
+
+
+
 @media (max-width:992px) {
     .progress-sec{
         text-align: center;
@@ -149,3 +159,40 @@ body,.navbar{
 .form-control{
     box-shadow: 0px 0px 10px 10px black !important;
 }
+
+.footer-contact-btn{
+    background-color: var(--main-color);
+    padding: 12px 15px 12px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+.footer-contact-btn button{
+    background-color: var(--main-color);
+    padding: 9px 15px 9px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }

@@ -34,6 +34,16 @@
 
 <body>
 
+
+    <!-- scroll button  -->
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+    </button>
+
     <section class="containe mb-5">
         <nav class="navbar  fixed-top">
 
@@ -54,7 +64,16 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active " aria-current="page" href="*">Home</a>
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link   " aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link   " aria-current="page" href="#myskill">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " aria-current="page" href="#myportfolio">Portfolio</a>
                             </li>
                         </ul>
                     </div>
@@ -66,7 +85,7 @@
 
     <!-- self details code is here  -->
 
-    <section class="container">
+    <section class="container" id="home" style="margin-top: 200px;">
         <div>
 
             <div class="about-mySelf abouts">
@@ -81,13 +100,15 @@
                     <div>
                         <button class="resume" onclick="document.getElementById('resume').click()">My Resume</button>
                         <a href="AbdullmalekResume.pdf" id="resume" download hidden></a>
-                        <button class="me-btn" class="me-btn">About Me</button>
+                        <button class="me-btn" class="me-btn" >
+                            <a class="about-me-btn" href="#about">About Me</a>
+                           </button>
                     </div>
             </div>
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="about">
         <div class="about-mySelf-1 mb-5">
             <div class="about-mySelf about-mySelf-2">
                 <div>
@@ -108,7 +129,10 @@
                     <div class="text-start">
                         <button class="resume" onclick="document.getElementById('resume').click()">My Resume</button>
                         <a href="AbdullmalekResume.pdf" id="resume" download hidden></a>
-                        <button class="me-btn" class="me-btn">My Skills</button>
+                        <button class="me-btn" class="me-btn">
+                            <a class="about-me-btn" href="#myskill">My Skills</a>
+
+                        </button>
                     </div>
                 </div>
             </div>
@@ -118,7 +142,7 @@
 
     <!-- skill section code is here  -->
 
-    <section>
+    <section id="myskill" style="margin-bottom: 140px;">
         <div class=" skill-sec mb-5">
 
 
@@ -140,22 +164,50 @@
     <!-- portfolio code  -->
 
 
-    <section>
+    <section class="mb-5" id="myportfolio">
+
         <div class="portfolio-section mb-5">
+
             <div class="container">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 " id="cards-row">
-                 
+                <div class="text-light fw-bold  text-lg-start text-center mt-4 mb-4">
+                    <h1>Portfolio</h1>
                 </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 " id="cards-row">
+
+                </div>
+            </div>
+            <div class="text-center mt-5 nb-5">
+                <a href="https://github.com/AbdulMalek-swe" target="_blank"> <button class="skill-btn">See
+                        More</button></a>
+            </div>
         </div>
-         <div class="text-center mt-5">
-            <button class="skill-btn">See More</button>
-          
-         </div>
-        </div>
-        
-         
     </section>
 
+    <footer style="margin-top:100px">
+        <section class="container mt-5" style="margin-bottom: 100px;">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4 mt-5">
+                <div class="text-lg-start text-center">
+                    <p style="color:#ffffff81; line-height: 1.4; ">
+                        i would like to work with any organization who believes my skills would be beneficial to them.
+                        Please
+                        inform if you're looking for someone like me. You may also simply say hello to me
+                    </p>
+                    <a href="mailto:abdulmalek.swe.585@gmail.com" class="footer-contact-btn"> <button  >Contact Me</button></a>
+                </div>
+                <div style="color: rgba(255, 255, 255, 0.664);" class="text-lg-start text-center">
+                    <h6 style="color: white;">E-mail</h4>
+                    <p>abdulmalek.swe.585@gmail.com</p>
+                    <h6>Social</h4>
+                    <p>Facebook - abdulmalek.swe.585</p>
+                    <h6 style="color: white;">Address</h4>
+                    <p>Ashulia,Savar,Dhaka</p>
+                </div>
+            </div>
+        </section>
+        <div class="container text-center" style="color: rgba(255, 255, 255, 0.685);">
+          <p>Thanks for visiting my portfolio</p>
+        </div>
+    </footer>
 
 
 
@@ -164,111 +216,7 @@
 
 
 
-
-
-
-    <script  >
-        const data = [
-     {
-          name: "React",
-          skill: "80%",
-          catagory: "web"
-     },
-     {
-          name: "Others",
-          skill: "80%",
-          catagory: "others"
-     },
-     {
-          name: "Others",
-          skill: "80%",
-          catagory: "others"
-     },
-     {
-          name: "Otherssdfs",
-          skill: "80%",
-          catagory: "others"
-     },
-     {
-          name: "Otherssdf",
-          skill: "80%",
-          catagory: "others"
-     },
-     {
-          name: "htmlcss",
-          skill: "80%",
-          catagory: "others"
-     },
-     {
-          name: "Proggramin",
-          skill: "80%",
-          catagory: "proggraming"
-     },
-     {
-          name: "Tools",
-          skill: "80%",
-          catagory: "tools"
-     }
-];
-
-let skills = document.getElementById('skill');
-
-const addSkill = (d, data) => {
-     let filter = data.filter(item => item.catagory === d);
-     skills.innerHTML = ' ';
-     console.log(skills);
-     filter.forEach(item => {
-          let div = document.createElement('div');
-          div.innerHTML = `
-          <div class="progress1 container">
-              <h2>${item.name}</h2>
-              <h2>${item.skill}</h2>
-          </div>
-          <div class="progress-line">
-      </div>`;
-          div.classList.add("progress-grid")
-          skills.appendChild(div);
-     })
-}
-const skill = (skills, s = 0) => {
-     const btn = document.getElementsByClassName('skill-btn');
-     const skill = skills ? skills : 'web';
-     for (let i = 0; i < btn.length; i++) {
-          if (i != s)
-               btn[i].classList.remove("active");
-     }
-     let filter;
-     filter = data.filter(item => item.catagory === skill);
-     if (skill === filter[0].catagory) {
-          addSkill(skill, data);
-          btn[s].classList.add("active");
-     }
-
-}
-skill();
-
-// portfolio card here 
-const cards = document.getElementById('cards-row');
-data.slice(0,5).forEach(item => {
-     let div = document.createElement('div');
-     div.innerHTML = `
-     <div class="col">
-     <div class="card" id="cards-sec">
-         <div>
-             <img height="180px" src="./images/myPic.jpg" class="card-img-top" alt="...">
-             <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">This is a longer card with supporting text below .</p>
-                 <p class="card-text">Stack : js html css </p>
-                 <p class="card-text">link icon icon</p>
-             </div>
-         </div>
-     </div>
- </div>`;
-    
-     cards.appendChild(div);
-})
-    </script>
+    <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
