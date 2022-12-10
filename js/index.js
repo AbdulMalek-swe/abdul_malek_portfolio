@@ -59,6 +59,11 @@ const data = [
           name: "Tools",
           skill: "80%",
           catagory: "tools"
+     },
+     {
+          name: "Tools",
+          skill: "80%",
+          catagory: "tools"
      }
 ];
 
