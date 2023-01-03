@@ -26,53 +26,56 @@ const data = [
           catagory: "web"
      },
      {
-          name: "Others",
-          skill: "80%",
+          name: "Express",
+          skill: "60%",
+          catagory: "web"
+     },
+     {
+          name: "Redux",
+          skill: "30%",
           catagory: "others"
      },
      {
-          name: "Others",
+          name: "JavaScript",
           skill: "80%",
-          catagory: "others"
+          catagory: "Proggraming"
      },
      {
-          name: "Otherssdfs",
-          skill: "80%",
-          catagory: "others"
-     },
-     {
-          name: "Otherssdf",
-          skill: "80%",
-          catagory: "others"
-     },
-     {
-          name: "htmlcss",
-          skill: "80%",
-          catagory: "others"
-     },
-     {
-          name: "Proggramin",
-          skill: "80%",
+          name: "CPP",
+          skill: "50%",
+          catagory: "proggraming"
+     }, {
+          name: "C",
+          skill: "50%",
           catagory: "proggraming"
      },
      {
-          name: "Tools",
-          skill: "80%",
+          name: "Firebase",
+          skill: "70%",
           catagory: "tools"
      },
      {
-          name: "Tools",
-          skill: "80%",
+          name: "Vercel",
+          skill: "60%",
           catagory: "tools"
      }
 ];
+const project = [
+     {
+          name:"Car Selling ecomerce",
+          description:' It,s a common marketplace where people can buy and sell  cars easily.Its a fully developed website made with React Firebase Mui,Express js, mongo DB',
+          technology:"Express Mongodb React",
+          img: './images/car.jpg',
+          live:'https://thunderous-narwhal-072096.netlify.app/',
+          github:'https://github.com/AbdulMalek-swe/car_ecomerce_api'
+     },
 
+]
 let skills = document.getElementById('skill');
-
 const addSkill = (d, data) => {
      let filter = data.filter(item => item.catagory === d);
+   
      skills.innerHTML = ' ';
-     console.log(skills);
      filter.forEach(item => {
           let div = document.createElement('div');
           div.innerHTML = `
@@ -82,10 +85,13 @@ const addSkill = (d, data) => {
           </div>
           <div class="progress-line">
       </div>`;
+     //    document.getElementsByClassName("progress-line")[0].style.width='90%'
           div.classList.add("progress-grid")
-          skills.appendChild(div);
+          skills.appendChild(div);   
      })
+     mycall(filter)
 }
+// skill here 
 const skill = (skills, s = 0) => {
      const btn = document.getElementsByClassName('skill-btn');
      const skill = skills ? skills : 'web';
@@ -102,21 +108,27 @@ const skill = (skills, s = 0) => {
 
 }
 skill();
-
+function mycall(newdata){
+     const percentSkill = document.getElementsByClassName("progress-line");
+   for(let i=0;i<newdata.length;i++){
+     percentSkill[i].style.width = newdata[i].skill;
+   }
+}
 // portfolio card here 
 const cards = document.getElementById('cards-row');
-data.slice(0,5).forEach(item => {
+project.forEach(item => {
      let div = document.createElement('div');
      div.innerHTML = `
      <div class="col">
      <div class="card" id="cards-sec">
          <div>
-             <img height="180px" src="./images/myPic.jpg" class="card-img-top" alt="...">
+             <img height="180px" src=${item.img}  class="card-img-top" alt="...">
              <div class="card-body">
-                 <h5 class="card-title">Card title</h5>
-                 <p class="card-text">This is a longer card with supporting text below .</p>
-                 <p class="card-text">Stack : js html css </p>
-                 <p class="card-text">link icon icon</p>
+                 <h5 class="card-title">${item.name}</h5>
+                 <p class="card-text">${item.description}</p>
+                 <p class="card-text">Stack : ${item.technology} </p>
+                 <a href= ${item.live} target="_blank"> <button class="skill-btn">Client Site</button></a>
+                 <a href= ${item.github} target="_blank"> <button class="skill-btn">Server Site</button></a>
              </div>
          </div>
      </div>
