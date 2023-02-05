@@ -48,6 +48,11 @@ const data = [
      catagory: "proggraming"
 },
 {
+     name: "Js",
+     skill: "70%",
+     catagory: "proggraming"
+},
+{
      name: "Firebase",
      skill: "70%",
      catagory: "tools"
@@ -62,11 +67,21 @@ const project = [
 {
      name:"Car Selling ecomerce",
      description:' It,s a common marketplace where people can buy and sell  cars easily.Its a fully developed website made with React Firebase Mui,Express js, mongo DB',
-     technology:"Express Mongodb React",
-     img: './images/car.jpg',
+     technology:"Express Mongodb React firebase bootstrap",
+     img: '../images/car.jpeg',
      live:'https://thunderous-narwhal-072096.netlify.app/',
+     clientSite:'https://github.com/AbdulMalek-swe/car_ecomerce_client',
      github:'https://github.com/AbdulMalek-swe/car_ecomerce_api'
 },
+{
+     name:"Health Care System",
+     description:'It,s a common health care system where people can appointment doctor , buy medicine , contact ambulance and contact blood donar.',
+     technology:"Express Mongodb React firebase tailwind usereducer",
+     img: '../images/health.jpeg',
+     live:'https://radiant-crisp-474b4b.netlify.app/',
+     clientSite:'https://github.com/AbdulMalek-swe/health_care_management_system_client_site',
+     github:'https://github.com/AbdulMalek-swe/health_care_management_system_server_site'
+}
 
 ]
 let skills = document.getElementById('skill');
@@ -125,8 +140,9 @@ div.innerHTML = `
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text">${item.description}</p>
             <p class="card-text">Stack : ${item.technology} </p>
-            <a href= ${item.live} target="_blank"> <button class="skill-btn">Client Site</button></a>
-            <a href= ${item.github} target="_blank"> <button class="skill-btn">Server Site</button></a>
+            <a href= ${item.live} target="_blank" class="mb-2"> <button class="skill-btn mb-2">Client Site</button></a>
+            <a href= ${item.clientSite} target="_blank" class="mb-2"> <button class="skill-btn mb-2">Client Site</button></a>
+            <a href= ${item.github} target="_blank" class="mb-2"> <button class="skill-btn mb-2">Server Site</button></a>
         </div>
     </div>
 </div>
