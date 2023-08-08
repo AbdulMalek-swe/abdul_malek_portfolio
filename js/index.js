@@ -64,6 +64,15 @@ const data = [
 }
 ];
 const project = [
+     {
+          name:"Health Care System",
+          description:'It,s a common health care system where people can appointment doctor , buy medicine , contact ambulance and contact blood donar.',
+          technology:"Express Mongodb React firebase tailwind usereducer",
+          img: '../images/health.jpeg',
+          live:'https://radiant-crisp-474b4b.netlify.app/',
+          clientSite:'https://github.com/AbdulMalek-swe/health_care_management_system_client_site',
+          github:'https://github.com/AbdulMalek-swe/health_care_management_system_server_site'
+     },
 {
      name:"Car Selling ecomerce",
      description:' It,s a common marketplace where people can buy and sell  cars easily.Its a fully developed website made with React Firebase Mui,Express js, mongo DB',
@@ -74,14 +83,24 @@ const project = [
      github:'https://github.com/AbdulMalek-swe/car_ecomerce_api'
 },
 {
-     name:"Health Care System",
-     description:'It,s a common health care system where people can appointment doctor , buy medicine , contact ambulance and contact blood donar.',
-     technology:"Express Mongodb React firebase tailwind usereducer",
-     img: '../images/health.jpeg',
-     live:'https://radiant-crisp-474b4b.netlify.app/',
-     clientSite:'https://github.com/AbdulMalek-swe/health_care_management_system_client_site',
-     github:'https://github.com/AbdulMalek-swe/health_care_management_system_server_site'
+     name:"The People House",
+     description:"This application based on politics person.politician news,vote,donation for their party",
+     technology:"  React tailwind redux",
+     img: '../images/peoplehosue.png',
+     live:'https://people-house.vercel.app/',
+     clientSite:'https://github.com/AbdulMalek-swe/people_house',
+     github:'https://github.com/AbdulMalek-swe/'
+},
+{
+     name:"ALEF BAG",
+     description:"This is a web application based in the greece  where users can  order their favourite bag",
+     technology:"React express node mongoose tailwind redux",
+     img: '../images/download.jpeg',
+     live:'https://anaizan-frontend.vercel.app/cover',
+     clientSite:'https://github.com/AbdulMalek-swe/alif.front.end',
+     github:'https://github.com/AbdulMalek-swe/alif.back.end'
 }
+
 
 ]
 let skills = document.getElementById('skill');
@@ -140,7 +159,7 @@ div.innerHTML = `
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text">${item.description}</p>
             <p class="card-text">Stack : ${item.technology} </p>
-            <a href= ${item.live} target="_blank" class="mb-2"> <button class="skill-btn mb-2">Client Site</button></a>
+            <a href= ${item.live} target="_blank" class="mb-2"> <button class="skill-btn mb-2">live</button></a>
             <a href= ${item.clientSite} target="_blank" class="mb-2"> <button class="skill-btn mb-2">Client Site</button></a>
             <a href= ${item.github} target="_blank" class="mb-2"> <button class="skill-btn mb-2">Server Site</button></a>
         </div>
